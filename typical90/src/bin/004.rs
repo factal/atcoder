@@ -17,7 +17,7 @@ fn main() {
     }
 
     for i in 0..h{
-        let mut l:Vec<String>=vec![];
+        let mut l:Vec<String> = vec![];
         for j in 0..w{
             l.push((b[i]+c[j]-a[i][j]).to_string());
         }
