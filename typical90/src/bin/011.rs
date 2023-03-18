@@ -1,3 +1,4 @@
+use std;
 use proconio::input;
 
 fn main() {
@@ -18,7 +19,7 @@ fn main() {
             if j < c || d < j {
                 dp[i+1][j] = dp[i][j];
             } else {
-                dp[i+1][j] = std::cmp::max(dp[i][j], dp[i][j-c] + s);
+                dp[i+1][j] = cmp::max(dp[i][j], dp[i][j-c] + s);
             }
         }
     }
